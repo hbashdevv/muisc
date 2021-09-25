@@ -8,28 +8,28 @@ from helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
       await message.reply_text(
-        f"""**مرحبا انا **{bn}** 🎵
+        f"""مرحبا انا {bn} 
 
 بامكاني تشغيل الاغاني في المكالمات الجماعيه 
-قم برفعي  مشرف في قناتك مع البوت المساعد [𝗠𝗨𝗦𝗜𝗖 𝗦𝗧𝗢𝗥𝗠](https://t.me/MUSIC_VOICEY).
+قم برفعي  مشرف في قناتك مع البوت المساعد [𝙎𝙉𝙀𝙆𝙍𝙎 🍫](https://t.me/hmh_bbot).
 
-قم باضافتي الى مجموعتك لتبدأ الحفله 🎶**
+قم باضافتي الى مجموعتك لتبدأ الموسيقى 🎶
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 لطلب المساعده 🛠", url="https://t.me/hhmhhh")
+                        "⌁︙ للمساعده ︙⌁", url="https://t.me/hhmhhh")
                   ],[
                     InlineKeyboardButton(
-                        "💬 قناة للشروحات", url="https://t.me/in_arrray"
+                        "⌁︙ قناة تمبلر ︙⌁", url="https://t.me/O9oOoO"
                     ),
                     InlineKeyboardButton(
-                        "🔊 قناتي", url="https://t.me/CQCQQ"
+                        "⌁︙ متحركات اطفال ︙⌁", url="https://t.me/z44z4"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕  اضفني الى مجموعتك ➕", url="https://t.me/MusiVchatBot?startgroup=true"
+                        "⌁︙ اضافتي الى مجموعة ︙⌁", url="https://t.me/hmh_bbot?startgroup=true"
                     )]
             ]
         ),
@@ -38,7 +38,7 @@ async def start(_, message: Message):
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""** تم تفعيل البوت بنجاح ✅**""",
+      await message.reply_text(""" تم تفعيل البوت بنجاح ✅""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -52,10 +52,10 @@ async def gstart(_, message: Message):
 
 @Client.on_message(filters.command("panel") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""** يمتاز هذا البوت بالبحث والتحميل ✨
+      await message.reply_text(""" يمتاز هذا البوت بالبحث والتحميل ✨
 اكتب معرف البوت مع اسم الاغنيه للبحث 🔊
 مثال : 
-@MusiVchatBot كاظم الساهر
+@hmh_bbot كاظم الساهر
 تستطيع تحميل اي اغنيه ايضا 💞
 بالاوامر التاليه :
 - /ytp رابط الاغنيه من اليوتيوب
@@ -67,15 +67,15 @@ async def gstart(_, message: Message):
 - /resume لتكمله الاغنيه المتوقفه
 - /stop لايقاف البوت عن تشغيل الاغنيه
 - /skip لتخطي الاغنيه الحاليه والانتقال الى الاغنيه التاليه
-#ملاحظه : تستطيع ان تقوم بتشغيل اغنيه اخرى فتضاف الى الدور بعد الاغنيه الحاليه فتتنقل بينها وبين الاغاني الباقيه باستخدام امر /skip 🔖 **""",
+#ملاحظه : تستطيع ان تقوم بتشغيل اغنيه اخرى فتضاف الى الدور بعد الاغنيه الحاليه فتتنقل بينها وبين الاغاني الباقيه باستخدام امر /skip 🔖 """,
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 قناتي الخاصه", url="https://t.me/z44z4")
+                        "⌁︙ متحركات اطفال ︙⌁", url="https://t.me/z44z4")
                 ],[
                     InlineKeyboardButton(
-                        "🎶 الحساب المساعد", url="https://t.me/MUSIC_VOICEY"
+                        "⌁︙ الحساب المساعد ︙⌁", url="https://t.me/SnekrsVoice"
                     )
                 ]
             ]
